@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<objects>
+  <object Name="GelatinousCanteen" Inherits="BaseOoze">
+  	<part 
+  		Name="GelatinousCanteenDrinkable" 
+  		UnfriendlyRepThreshold="-550"
+  		FriendlyDescription="This ooze looks much older than others - its leathery membrane is clouded in places as trapped air slowly diffuses from old wounds. It tilts a bizarre, solid appendage towards you, and you recognize its purpose in its mimicked shape - the stopper-cap of a canteen. Here is a creature that, by some trick of nature or personal doctrine, makes its life ensuring others live and drink."
+  		UnfriendlyDescription="This ooze looks much older than others - its leathery membrane is clouded in places as trapped air slowly diffuses from old wounds. It withholds its bizarre, solid appendage away from you, and you recognize its purpose in its mimicked shape - the stopper-cap of a canteen. Here is a creature that, by some trick of nature or personal doctrine, makes its life ensuring others live and drink - but, it seems, not you."
+  	/>
+  	<property Name="Story" Value="GelatinousCanteenStory" />
+  	<tag Name="SimpleConversation" Value="&amp;w*jiggles its water at you*&amp;y~&amp;w*wriggles expectantly*&amp;y" />
+    <part Name="Brain" Factions="Prey-100,Oozes-25" Hostile="false" Calm="True" Wanders="true" />
+    <part Name="Render" DisplayName="&amp;Ggelatinous canteen" Tile="creatures/canteen-ooze.png" DetailColor="w" RenderString="c" ColorString="&amp;G" TileColor="&amp;G" />
+    <tag Name="WaterContainer" Value="1" />
+    <part Name="LiquidVolume" MaxVolume="64" Radioactivity="0" Saltyness="0" Volume="64" StartVolume="2d32-1" InitialLiquid="water-1000" />
+    <part Name="LiquidBurst" EelChance="0" Liquid="GelPool"></part>
+  </object>
+</objects>

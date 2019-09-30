@@ -1,0 +1,12 @@
+<encountertables>
+	<encountertable Name="GelatinousCanteenEncounter">
+	    <objects>
+	      <object Chance="10" Number="1" Blueprint="GelatinousCanteen"></object>
+	    </objects>
+	</encountertable>
+
+	<encountertable Name="Caves 3" Load="Merge">
+		<mergetable Table="GelatinousCanteenEncounter" Weight="low"></mergetable>
+	</encountertable>
+
+</encountertables>
